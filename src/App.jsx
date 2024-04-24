@@ -32,9 +32,9 @@ function App() {
             <Route path="/" element={<AuthProtector><TopNavbar/><Dashboard /></AuthProtector>}></Route>
             <Route path="/shortenurl"element={<AuthProtector><TopNavbar/>,<ShortenUrl/></AuthProtector>}></Route>
             <Route path="/myurls"element={<AuthProtector><TopNavbar/>,<MyUrls/></AuthProtector>}></Route>
-            <Route path="/forgotpassword"element={<AuthProtector><Forgot_Password/></AuthProtector>}></Route>
-            <Route path="/newpassword"element={<AuthProtector><NewPassword/></AuthProtector>}></Route>
-            <Route path="/passwordupdated"element={<AuthProtector><PasswordUpdated/></AuthProtector>}></Route>
+            <Route path="/forgotpassword"element={<Forgot_Password/>}></Route>
+            <Route path="/newpassword"element={<NewPassword/>}></Route>
+            <Route path="/passwordupdated"element={<PasswordUpdated/>}></Route>
           </Routes>
           
         </div>
